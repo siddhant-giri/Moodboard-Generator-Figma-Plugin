@@ -1,0 +1,178 @@
+.loading-indicator {
+    margin: 0;
+    padding: 12px;
+    background-color: #E5F4FF;
+    border-radius: 0 0 6px 6px;
+    color: #18A0FB;
+    text-align: center;
+    font-weight: 500;
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  .error-message {
+    margin: 0;
+    padding: 12px;
+    background-color: #fff1f0;
+    border-radius: 0 0 6px 6px;
+    border-top: none;
+    color: #cf1322;
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  .error-message p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .error-hint {
+    font-size: 12px;
+    margin-top: 8px !important;
+    color: #666;
+  }
+  
+  /* Content Container */
+  .content {
+    padding: 0 16px;
+  }
+  
+  /* Input and Select Styles */
+  .input-group,
+  .source-selector,
+  .category-selector,
+  .template-selector {
+    margin-bottom: 16px;
+  }
+  
+  .input-group label,
+  .source-selector label,
+  .category-selector label,
+  .template-selector label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    background-color: white;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Custom Select Arrow */
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23666666' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px; /* Space for arrow */
+  }
+  
+  /* Focus States */
+  input[type="text"]:focus,
+  select:focus {
+    outline: none;
+    border-color: #18A0FB;
+    box-shadow: 0 0 0 2px rgba(24, 160, 251, 0.1);
+  }
+  
+  /* Hover States */
+  input[type="text"]:hover,
+  select:hover {
+    border-color: #BDBDBD;
+  }
+  
+  /* Disabled States */
+  select:disabled {
+    background-color: #F5F5F5;
+    cursor: not-allowed;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .header {
+    margin-top: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 0 16px;
+  }
+  
+  .button-group {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  
+  .button-group button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  .button-group button.primary {
+    background-color: #18A0FB;
+    color: white;
+  }
+  
+  .button-group button.primary:hover {
+    background-color: #0D8EE9;
+  }
+  
+  .button-group button.primary:active {
+    transform: scale(0.98);
+  }
+  
+  .button-group button:disabled {
+    background-color: #E0E0E0;
+    cursor: not-allowed;
+  }
+  
+  /* ... rest of existing styles ... */
+  
+  .retro-settings {
+    background: #f5f5f5;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+  }
+  
+  .retro-settings .input-group {
+    margin-bottom: 12px;
+  }
+  
+  .retro-settings input[type="number"] {
+    width: 80px;
+  }
+  
+  .retro-settings input[type="color"] {
+    width: 50px;
+    height: 30px;
+    padding: 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+  } 
